@@ -1,0 +1,19 @@
+.box{
+        background-color: rgb(127, 127, 215);
+    }
+    .box1{
+        color:blue;
+        margin:50px;
+        padding:4px;
+        height: 30px;
+        box-sizing: border-box;
+        width: 3400px;
+
+    }
+    .box2{
+        color:crimson;
+        margin:10px;
+        padding:10px;
+        height: 300px;
+        box-sizing: border-box;
+    }
