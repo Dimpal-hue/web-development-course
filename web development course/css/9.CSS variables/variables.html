@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+        :root{
+            --color:rgb(195, 197, 171);
+            --secondcolor:rgb(248, 184, 184);
+            --third:rgb(217, 159, 244);
+        }
+        div ul{
+            display:flex;
+            list-style: none;
+            cursor:pointer
+            
+        }
+        ul li{
+            background-color: var(--color);
+            padding:0px 100px 0px 100px;
+            margin:3px;
+            font-size:30px;
+            text-align:center;
+        }
+        ul li:first-child{
+            background-color: var(--secondcolor);
+        }
+        ul li:hover{
+            color:var(--third)
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul class="navbar">
+            <li>Home</li>
+            <li>contact</li>
+            <li>About</li>
+        </ul>
+    </div>
+    
+</body>
+</html>
