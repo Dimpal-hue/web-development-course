@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more css Selectors</title>
+    <style>
+        div,[data-color="primary"]{
+            background-color: aquamarine;
+            padding-top: 45px;
+            border: 1px solid black;
+        }
+
+        .box:nth-child(2){
+            background-color: yellow;
+        }
+        .box:nth-last-child(1){
+            background-color: red;
+        }
+        
+        /* 2.before and after- vvv important */
+
+        .boxes::before{
+            content: "Hey Im a before element";
+            display: block;
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+        .boxes::after{
+            content: "Hey Im a after element";
+            display: block;
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+
+        /* 3.selection selectors */
+        ::selection{
+            background-color: red;
+            color: white;
+        }
+
+        /* 4.first letter */
+        .box::first-letter{
+            font-size: 2em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <!-- 1.attribute selector -->
+        <div data-color="primary" class="box">Hey Im a fisrt box</div>
+
+
+        <div class="box">Now im a second box</div>
+
+
+        <div class="box">good, Im third box</div>
+    </div>
+</body>
+</html>
